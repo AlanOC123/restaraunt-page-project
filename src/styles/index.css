@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'libre_baskervillebold';
+  src: 
+    url('../assets/webfontkit-20231105-092519/librebaskerville-bold-webfont.woff2') format('woff2'),
+    url('../assets/webfontkit-20231105-092519/librebaskerville-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'libre_baskervilleitalic';
+  src: 
+    url('../assets/webfontkit-20231105-092519/librebaskerville-italic-webfont.woff2') format('woff2'),
+    url('../assets/webfontkit-20231105-092519/librebaskerville-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'libre_baskervilleregular';
+  src: 
+    url('../assets/webfontkit-20231105-092519/librebaskerville-regular-webfont.woff2') format('woff2'),
+    url('../assets/webfontkit-20231105-092519/librebaskerville-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --base-font-fam: 'libre_baskervilleregular';
+  --heading-font-fam: 'libre_baskervilleitalic';
+  --button-font-fam: 'libre_baskervillebold';
+  --base-font-size: 1.4rem;
+  --heading-1-font-size: 2.4rem;
+  --heading-2-font-size: 2rem;
+  --button-font-size: 1.8rem;
+  --background-clr: rgb(245, 246, 245);
+  --highlight-clr-1: rgb(235, 125, 125);
+  --highlight-clr-2: rgb(125, 235, 125);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+button {
+  font-family: var(--button-font-fam);
+  font-size: var(--button-font-size);
+
+  background: none;
+  border: none;
+}

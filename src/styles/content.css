@@ -1,0 +1,88 @@
+@import url('./index.css');
+
+#content {
+  height: 100%;
+  grid-column: 3 / -1;
+  grid-row: 2 / -1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--background-clr);
+}
+
+#content .container {
+  width: 95%;
+  height: 95%;
+  border: 1px solid black;
+
+  overflow-x: scroll;
+  border-radius: 1rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  gap: 1rem;
+}
+
+.text-container {
+  margin: 0 1rem 0 1rem;
+  border-radius: 1rem;
+}
+
+.about-heading {
+  padding: 1rem;
+  font-family: var(--heading-font-fam);
+  font-size: var(--heading-2-font-size);
+}
+
+.about-text {
+  padding: 1rem;
+  font-family: var(--base-font-fam);
+  font-size: var(--base-font-size);
+}
+
+.section-heading {
+  position: sticky;
+  top: 0px;
+  background-color: var(--background-clr);
+  padding: 1rem;
+
+  font-family: var(--heading-font-fam);
+  font-size: var(--heading-2-font-size);
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-heading {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: var(--heading-font-fam);
+  font-size: var(--base-font-size);
+}
+
+.contact-text {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  font-family: var(--base-font-fam);
+  font-size: var(--base-font-size);
+}

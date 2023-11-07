@@ -1,0 +1,41 @@
+@import url('./content.css');
+
+.card {
+  display: flex;
+  margin: 1rem;
+  gap: 2rem;
+}
+
+.card-image-container {
+  flex: 1;
+}
+
+.card-image-container img {
+  width: 12vw;
+  aspect-ratio: 1/1;
+
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 1rem;
+}
+
+.card-text-container {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 1.5rem;
+}
+
+.card-text-container p {
+  font-family: var(--base-font-fam);
+  font-size: var(--base-font-size);
+}
+
+.card-text-container h2 {
+  font-family: var(--heading-font-fam);
+  font-size: var(--heading-2-font-size);
+}

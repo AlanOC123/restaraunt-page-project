@@ -1,0 +1,64 @@
+@import url('./index.css');
+
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 10px;
+  font-family: 'libre_baskervilleregular'
+}
+
+.nav {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  background-color: var(--background-clr);
+  z-index: 1;
+  box-shadow: 0 0.3rem 0.5rem rgb(0, 0, 0, 0.3);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#logo-image {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo-image img {
+  display: block;
+  max-height: 10vh;
+  border-radius: 1rem;
+  border: 0.1rem solid black;
+}
+
+#logo-text {
+  flex: 2;
+  justify-self: flex-start;
+  align-self: center;
+
+  font-family: var(--heading-font-fam);
+  font-size: var(--heading-font-size);
+}
+
+.nav-items {
+  height: 100%;
+  flex: 1;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-items button:hover {
+  color: var(--highlight-clr-1);
+}
